@@ -39,8 +39,14 @@ describe('') do
   it("returns true if scissors is the object and paper is the argument") do #s>p
     expect("scissors".beats?("paper")).to(eq(true))
     end
+  it("returns true if scissors is the object and lizard is the argument") do #s>l
+    expect("scissors".beats?("lizard")).to(eq(true))
+    end
   it("returns false if scissors is the object and rock is the argument") do #s<r
     expect("scissors".beats?("rock")).to(eq(false))
+    end
+  it("returns false if scissors is the object and spock is the argument") do #s<sp
+    expect("scissors".beats?("spock")).to(eq(false))
     end
   it("returns 'tie game play again' if scissors is the object and scissors is the argument") do #s=s
     expect("scissors".beats?("scissors")).to(eq("tie game play again"))
