@@ -4,15 +4,21 @@ class String
    if (self == "rock") and (second == "scissors")
      puts "Smash!! Rock Wins"
      true
+  elsif (self == "rock") and (second == "lizard")
+    puts "Smash!! Rock Wins"
+    true
    elsif (self == "rock") and (second == "paper")
      puts "coverup!! Paper Wins"
      false
+   elsif (self == "rock") and (second == "spock")
+    puts "Vaporized! Spock Wins"
+      false
    elsif (self == "rock") and (second == "rock")
      puts "tie game play again"
      "tie game play again"
 
-
     # paper vs --
+
   elsif (self == "paper") and (second == "rock")
     puts "coverup!! Paper Wins"
     true
@@ -24,6 +30,7 @@ class String
      "tie game play again"
 
      # scissors vs --
+
    elsif (self == "scissors") and (second == "paper")
      puts "snip!! scissors Wins"
      true
