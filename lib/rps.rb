@@ -49,7 +49,29 @@ class String
    elsif (self == "scissors") and (second == "rock")
       puts  "Smash!! Rock Wins"
       false
-    else (self == "scissors") and (second == "scissors")
+    elsif (self == "scissors") and (second == "scissors")
+      puts "tie game play again"
+      "tie game play again"
+
+      # lizard vs --
+    elsif (self == "lizard") and (second == "spock")
+      puts "snip!! lizard Wins"
+      true
+    elsif (self == "lizard") and (second == "paper")
+      puts "snip!! lizard Wins"
+      true
+    elsif (self == "lizard") and (second == "rock")
+       puts  "Smash!! Spock Wins"
+       false
+    elsif (self == "lizard") and (second == "scissors")
+       puts  "lizard is dead"
+       false
+     elsif (self == "lizard") and (second == "lizard")
+       puts "tie game play again"
+       "tie game play again"
+
+      # spock vs --
+    else (self == "spock") and (second == "spock")
       puts "tie game play again"
       "tie game play again"
    end
