@@ -68,18 +68,18 @@ describe('') do
       expect("lizard".beats?("lizard")).to(eq("tie game play again"))
       end
     # spock vs --
-    # it("returns true if spock is the object and scissors is the argument") do #sp>
-    #   expect("spock".beats?("scissors")).to(eq(true))
-    #   end
-    # it("returns true if spock is the object and rock is the argument") do #sp>r
-    #   expect("spock".beats?("rock")).to(eq(true))
-    #   end
-    # it("returns false if spock is the object and rock is the argument") do #sp<r
-    #   expect("spock".beats?("rock")).to(eq(false))
-    #   end
-    # it("returns false if spock is the object and spock is the argument") do #sp<sp
-    #   expect("spock".beats?("spock")).to(eq(false))
-    #   end
+    it("returns true if spock is the object and scissors is the argument") do #sp>
+      expect("spock".beats?("scissors")).to(eq(true))
+      end
+    it("returns true if spock is the object and rock is the argument") do #sp>r
+      expect("spock".beats?("rock")).to(eq(true))
+      end
+    it("returns false if spock is the object and paper is the argument") do #sp<p
+      expect("spock".beats?("paper")).to(eq(false))
+      end
+    it("returns false if spock is the object and lizard is the argument") do #sp<sp
+      expect("spock".beats?("lizard")).to(eq(false))
+      end
     it("returns 'tie game play again' if spock is the object and spock is the argument") do #sp=sp
       expect("spock".beats?("spock")).to(eq("tie game play again"))
       end

@@ -71,6 +71,18 @@ class String
        "tie game play again"
 
       # spock vs --
+    elsif (self == "spock") and (second == "rock")
+      puts "spock!! spock Wins"
+      true
+    elsif (self == "spock") and (second == "scissors")
+      puts "spock!! spock Wins"
+      true
+    elsif (self == "spock") and (second == "lizard")
+       puts  "Smash!! Spock Wins"
+       false
+    elsif (self == "spock") and (second == "paper")
+       puts  "spock is dead"
+       false
     else (self == "spock") and (second == "spock")
       puts "tie game play again"
       "tie game play again"
