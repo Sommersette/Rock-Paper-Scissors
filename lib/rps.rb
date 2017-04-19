@@ -3,9 +3,12 @@ class String
    if (self == "rock") and (second == "scissors")
      puts "Smash!! Rock Wins"
      true
-   else (self == "rock") and (second == "paper")
+   elsif (self == "rock") and (second == "paper")
      puts "coverup!! Paper Wins"
      false
+   else (self == "rock") and (second == "rock")
+     puts "tie game play again"
+     "tie game play again"
    end
  end
 end
