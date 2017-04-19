@@ -1,3 +1,7 @@
+# need player 1 input
+# need player 2 input
+# need ai?
+
 class String
   define_method(:beats?) do |second|
     # rock vs --
