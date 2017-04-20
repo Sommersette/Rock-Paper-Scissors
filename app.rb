@@ -12,6 +12,6 @@ end
 get('/outcome') do # these aren't accurate. Just place holders.
   @decision1 = params.fetch('player1')
   @decision2 = params.fetch('player2')
-  @outcome = ''.beats(@decision1,@decision2)
+  @outcome = @decision1.beats?(@decision2)
   erb(:outcome)
 end

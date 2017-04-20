@@ -69,7 +69,6 @@ DEPENDENCIES
   capybara
   launchy
   pry
-  rack (< 1.9)
   rspec
   sinatra
   sinatra-contrib
